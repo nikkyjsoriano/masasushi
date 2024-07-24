@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/masasushi/static/css/main.e6c13ad2.css",
+    "main.js": "/masasushi/static/js/main.69472f8e.js",
+    "static/js/453.4b14eb98.chunk.js": "/masasushi/static/js/453.4b14eb98.chunk.js",
+    "index.html": "/masasushi/index.html",
+    "main.e6c13ad2.css.map": "/masasushi/static/css/main.e6c13ad2.css.map",
+    "main.69472f8e.js.map": "/masasushi/static/js/main.69472f8e.js.map",
+    "453.4b14eb98.chunk.js.map": "/masasushi/static/js/453.4b14eb98.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.69472f8e.js"
+  ]
+}
