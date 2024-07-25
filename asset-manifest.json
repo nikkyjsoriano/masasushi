@@ -1,19 +1,29 @@
 {
   "files": {
     "main.css": "/masasushi/static/css/main.7f7887b4.css",
-    "main.js": "/masasushi/static/js/main.bb1921dd.js",
+    "main.js": "/masasushi/static/js/main.b0724686.js",
     "static/js/453.4b14eb98.chunk.js": "/masasushi/static/js/453.4b14eb98.chunk.js",
+    "static/media/logo.svg": "/masasushi/static/media/logo.affe15b613125b89cba502317683dd51.svg",
+    "static/media/IMAGES=IMAGES3.png": "/masasushi/static/media/IMAGES=IMAGES3.0ac0dbc4bc6bd954a41e.png",
+    "static/media/IMAGES=IMAGES5.png": "/masasushi/static/media/IMAGES=IMAGES5.994beeb10ddcef62631c.png",
+    "static/media/IMAGES=IMAGES4.png": "/masasushi/static/media/IMAGES=IMAGES4.6d611dd5b143a852ed51.png",
+    "static/media/IMAGES=IMAGES1.png": "/masasushi/static/media/IMAGES=IMAGES1.87eae0d690cf4e3cd964.png",
+    "static/media/IMAGES=IMAGES2.png": "/masasushi/static/media/IMAGES=IMAGES2.8202716c2fe71b8d7ee3.png",
+    "static/media/ZOOMED=ZOOMED2.png": "/masasushi/static/media/ZOOMED=ZOOMED2.dd50c6834da3911cf225.png",
+    "static/media/ZOOMED=1.png": "/masasushi/static/media/ZOOMED=1.65539d17527547647fc1.png",
+    "static/media/ZOOMED=ZOOMED3.png": "/masasushi/static/media/ZOOMED=ZOOMED3.e30b267884a841bbbe1e.png",
+    "static/media/lines-vector.svg": "/masasushi/static/media/lines-vector.f5e50f3b47608b5cfafe9f7a8fe662ec.svg",
     "static/media/slick.svg": "/masasushi/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/masasushi/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/masasushi/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/masasushi/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/masasushi/index.html",
     "main.7f7887b4.css.map": "/masasushi/static/css/main.7f7887b4.css.map",
-    "main.bb1921dd.js.map": "/masasushi/static/js/main.bb1921dd.js.map",
+    "main.b0724686.js.map": "/masasushi/static/js/main.b0724686.js.map",
     "453.4b14eb98.chunk.js.map": "/masasushi/static/js/453.4b14eb98.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7f7887b4.css",
-    "static/js/main.bb1921dd.js"
+    "static/js/main.b0724686.js"
   ]
 }
