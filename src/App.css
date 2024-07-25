@@ -1,19 +1,23 @@
-@import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
+/* Ensure no horizontal overflow */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
-html {
-  scroll-behavior: smooth;
+* {
+  box-sizing: border-box;
 }
 
 .app-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  width: 100%; /* Use 100% instead of 100vw */
+  min-height: 100vh;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 .App {
