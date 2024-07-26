@@ -1,7 +1,7 @@
 import React from "react";
+import MenuCarousel from "./MenuCarousel";
 import { Box, Typography } from "@mui/material";
-import LineVector from "./assets/lines-vector.svg";
-import MenuCarousel from "./components/MenuCarousel";
+import LineVector from "../assets/lines-vector.svg";
 
 const MenuSection = () => (
   <Box

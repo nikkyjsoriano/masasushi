@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import LineVector from "./assets/lines-vector.svg";
+import LineVector from "../assets/lines-vector.svg";
 
 const AboutSection = () => (
   <Box
