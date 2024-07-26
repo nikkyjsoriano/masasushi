@@ -1,15 +1,5 @@
 import React from "react";
-import {
-  AppBar,
-  Toolbar,
-  Button,
-  Typography,
-  Box,
-  TextField,
-  FormControlLabel,
-  Checkbox,
-  Paper,
-} from "@mui/material";
+import { AppBar, Toolbar, Button, Box } from "@mui/material";
 import Logo from "./assets/logo.svg"; // Import the logo
 
 import TopCarousel from "./components/TopCarousel";
@@ -20,19 +10,31 @@ import ContactSection from "./components/ContactSection";
 function App() {
   return (
     <Box sx={{ width: "100%", overflow: "auto", scrollBehavior: "smooth" }}>
-      <AppBar position="static" sx={{ backgroundColor: "transparent" }}>
+      <AppBar
+        position="relative"
+        sx={{ backgroundColor: "transparent", zIndex: 10 }}
+      >
         <Toolbar
           sx={{
             backgroundColor: "white",
             display: "flex",
             alignItems: "center",
+            height: 80,
+            position: "relative",
+            zIndex: 10,
           }}
         >
           {/* Space for the logo */}
           <img
             src={Logo}
             alt="Logo"
-            style={{ height: 80, marginRight: 16, padding: "10px" }} // Add padding around the logo
+            style={{
+              height: 100, // Increase the height of the logo
+              marginRight: 16,
+              padding: "10px",
+              marginBottom: -20, // Positive margin to make it overflow downward
+              zIndex: 10,
+            }}
           />
           {/* Navigation Buttons */}
           <Box sx={{ display: "flex", gap: 2, marginLeft: "auto" }}>
@@ -77,7 +79,9 @@ function App() {
       </AppBar>
 
       {/* Top Carousel */}
-      <TopCarousel />
+      <Box sx={{ position: "relative", zIndex: 1 }}>
+        <TopCarousel />
+      </Box>
 
       {/* Main Content Sections */}
       <AboutSection />

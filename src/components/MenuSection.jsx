@@ -7,8 +7,8 @@ const MenuSection = () => (
   <Box
     id="menu"
     sx={{
-      width: "70%",
-      maxWidth: "1200px",
+      // width: "70%",
+      // maxWidth: "1200px",
       margin: "0 auto",
       padding: 4,
     }}
@@ -17,7 +17,7 @@ const MenuSection = () => (
       variant="h4"
       sx={{
         fontFamily: '"Julee", cursive',
-        marginBottom: 3,
+        marginBottom: 0,
       }}
       gutterBottom
       textAlign="center"
@@ -29,7 +29,7 @@ const MenuSection = () => (
       src={LineVector}
       alt="Line Vector"
       sx={{
-        width: "100px",
+        width: "150px",
         height: "auto",
         margin: "0 auto",
         display: "block",

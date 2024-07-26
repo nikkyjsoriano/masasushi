@@ -1,8 +1,8 @@
 import React from "react";
 import LineVector from "../assets/lines-vector.svg";
+import FindUs from "../assets/findus.png";
 import {
   Box,
-  Paper,
   Button,
   Checkbox,
   TextField,
@@ -22,35 +22,29 @@ function ContactSection() {
         textAlign: "center", // Center the title
       }}
     >
-      <Box sx={{ position: "relative", display: "inline-block" }}>
-        <Typography
-          variant="h4"
-          sx={{
-            fontFamily: '"Julee", cursive',
-            marginBottom: 3, // Add padding to the bottom of the header item
-            position: "relative",
-            zIndex: 1,
-          }}
-          gutterBottom
-        >
-          Contact
-        </Typography>
-        <Box
-          component="img"
-          src={LineVector}
-          alt="Line Vector"
-          sx={{
-            width: "100px",
-            height: "auto",
-            display: "block",
-            margin: "0 auto",
-            position: "absolute",
-            bottom: 0,
-            left: "50%",
-            transform: "translateX(-50%)",
-          }}
-        />
-      </Box>
+      <Typography
+        variant="h4"
+        sx={{
+          fontFamily: '"Julee", cursive',
+          marginBottom: 0,
+        }}
+        gutterBottom
+        textAlign="center"
+      >
+        Contact Us
+      </Typography>
+      <Box
+        component="img"
+        src={LineVector}
+        alt="Line Vector"
+        sx={{
+          width: "150px",
+          height: "auto",
+          margin: "0 auto",
+          display: "block",
+          marginBottom: 3,
+        }}
+      />
 
       <Box
         sx={{
@@ -63,32 +57,63 @@ function ContactSection() {
         <Box sx={{ flex: 1 }}>
           <Box
             component="form"
-            sx={{ display: "flex", flexDirection: "column", gap: 2 }}
+            sx={{ display: "flex", flexDirection: "column", gap: 4 }}
           >
-            <TextField label="Name" variant="outlined" fullWidth />
-            <TextField
-              label="Email"
-              type="email"
-              variant="outlined"
-              fullWidth
-            />
-            <TextField label="Subject" variant="outlined" fullWidth />
-            <TextField
-              label="Message"
-              variant="outlined"
-              multiline
-              rows={4}
-              fullWidth
-            />
+            <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
+              <Typography
+                variant="body1"
+                sx={{
+                  fontSize: "1rem",
+                  textAlign: "left",
+                  fontFamily: '"Judson", serif',
+                }}
+              >
+                Name
+              </Typography>
+              <TextField variant="outlined" fullWidth />
+            </Box>
 
-            <FormControlLabel
-              control={<Checkbox />}
-              label="I want to receive news and updates"
-            />
-            <FormControlLabel
-              control={<Checkbox />}
-              label="Apply to Masa Sushi"
-            />
+            <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
+              <Typography
+                variant="body1"
+                sx={{
+                  fontSize: "1rem",
+                  textAlign: "left",
+                  fontFamily: '"Judson", serif',
+                }}
+              >
+                Email
+              </Typography>
+              <TextField variant="outlined" type="email" fullWidth />
+            </Box>
+
+            <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
+              <Typography
+                variant="body1"
+                sx={{
+                  fontSize: "1rem",
+                  textAlign: "left",
+                  fontFamily: '"Judson", serif',
+                }}
+              >
+                Subject
+              </Typography>
+              <TextField variant="outlined" fullWidth />
+            </Box>
+
+            <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
+              <Typography
+                variant="body1"
+                sx={{
+                  fontSize: "1rem",
+                  textAlign: "left",
+                  fontFamily: '"Judson", serif',
+                }}
+              >
+                Message
+              </Typography>
+              <TextField variant="outlined" multiline rows={4} fullWidth />
+            </Box>
 
             <Button
               variant="contained"
@@ -96,43 +121,98 @@ function ContactSection() {
               sx={{
                 backgroundColor: "#8D242C",
                 color: "white",
+                width: "fit-content", // Adjust width to fit content
                 "&:hover": {
                   backgroundColor: "#C6535C",
                 },
+                alignSelf: "flex-start", // Align to the left
+                padding: "8px 16px", // Add padding around the button text
+                marginTop: 2, // Space above the button
               }}
             >
-              Send
+              Submit
             </Button>
+
+            <Box sx={{ display: "flex", gap: 2, marginTop: 2 }}>
+              <FormControlLabel
+                control={<Checkbox />}
+                label="I want to receive news and updates"
+              />
+              <FormControlLabel
+                control={<Checkbox />}
+                label="Apply to Masa Sushi"
+              />
+            </Box>
           </Box>
         </Box>
 
         {/* Find Us Column */}
         <Box sx={{ flex: 1 }}>
-          <Typography variant="h6">Find Us</Typography>
-          <Paper sx={{ height: 300, width: "100%", marginTop: 2 }}>
-            {/* Placeholder for map box */}
-            <Box
-              sx={{
-                height: "100%",
-                backgroundColor: "#f0f0f0",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <Typography variant="body2">Map placeholder</Typography>
+          <Typography
+            variant="h6"
+            sx={{
+              textAlign: "left",
+              marginBottom: 1,
+              fontFamily: '"Judson", serif',
+              fontSize: "1rem",
+            }}
+          >
+            Find Us
+          </Typography>
+          <img
+            src={FindUs}
+            alt="Map"
+            style={{
+              width: "100%",
+              height: "auto",
+              display: "block",
+              margin: "0 auto",
+            }}
+          />
+          {/* Address Details Box */}
+          <Box
+            sx={{
+              display: "flex",
+              gap: 4,
+              flexDirection: { xs: "column", md: "row" },
+              marginTop: 2, // Reduced margin
+              padding: 1, // Reduced padding
+              border: "1px solid #8D242C",
+              borderRadius: 2,
+              color: "white",
+              backgroundColor: "#8D242C",
+              maxWidth: "800px",
+            }}
+          >
+            <Box sx={{ flex: 1, padding: 1, textAlign: "left" }}>
+              <Typography
+                variant="body1"
+                sx={{ fontFamily: '"Judson", serif' }}
+              >
+                Masa Sushi
+              </Typography>
+              <Typography
+                variant="body1"
+                sx={{ fontFamily: '"Judson", serif' }}
+              >
+                415 Nassau Park Blvd, Princeton, NJ 08540, USA
+              </Typography>
             </Box>
-          </Paper>
-          <Box sx={{ marginTop: 4 }}>
-            <Typography variant="body1" sx={{ marginBottom: 1 }}>
-              Masa Sushi 415 Nassau Park Blvd, Princeton, NJ 08540, USA
-            </Typography>
-            <Typography variant="body1" sx={{ marginBottom: 1 }}>
-              Phone: 609-520-8883
-            </Typography>
-            <Typography variant="body1">
-              Email: masa8restaurant@hotmail.com
-            </Typography>
+
+            <Box sx={{ flex: 1, padding: 1, textAlign: "left" }}>
+              <Typography
+                variant="body1"
+                sx={{ fontFamily: '"Judson", serif', marginBottom: 1 }}
+              >
+                Phone: 609-520-8883
+              </Typography>
+              <Typography
+                variant="body1"
+                sx={{ fontFamily: '"Judson", serif' }}
+              >
+                Email: masa8restaurant@hotmail.com
+              </Typography>
+            </Box>
           </Box>
         </Box>
       </Box>
