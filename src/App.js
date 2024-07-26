@@ -1,10 +1,12 @@
 import React from "react";
-import { AppBar, Toolbar, Button, Box } from "@mui/material";
-import Logo from "./assets/logo.svg"; // Import the logo
+import "./assets/styles/styles.css";
 
+import { AppBar, Toolbar, Button, Box } from "@mui/material";
+
+import Logo from "./assets/logo.svg";
 import TopCarousel from "./components/TopCarousel";
-import AboutSection from "./components/AboutSection";
 import MenuSection from "./components/MenuSection";
+import AboutSection from "./components/AboutSection";
 import ContactSection from "./components/ContactSection";
 
 function App() {
@@ -19,57 +21,29 @@ function App() {
             backgroundColor: "white",
             display: "flex",
             alignItems: "center",
-            height: 80,
+            height: 150,
             position: "relative",
             zIndex: 10,
           }}
         >
           {/* Space for the logo */}
-          <img
-            src={Logo}
-            alt="Logo"
-            style={{
-              height: 100, // Increase the height of the logo
-              marginRight: 16,
-              padding: "10px",
-              marginBottom: -20, // Positive margin to make it overflow downward
-              zIndex: 10,
-            }}
-          />
+          <img src={Logo} alt="Logo" className="logo" />
           {/* Navigation Buttons */}
           <Box sx={{ display: "flex", gap: 2, marginLeft: "auto" }}>
             <Button
-              sx={{
-                backgroundColor: "#8D242C",
-                color: "white",
-                "&:hover": {
-                  backgroundColor: "#C6535C",
-                },
-              }}
+              className="navButton"
               href="#about" // Link to About section
             >
               About
             </Button>
             <Button
-              sx={{
-                backgroundColor: "#8D242C",
-                color: "white",
-                "&:hover": {
-                  backgroundColor: "#C6535C",
-                },
-              }}
+              className="navButton"
               href="#menu" // Link to Menu section
             >
               Menu
             </Button>
             <Button
-              sx={{
-                backgroundColor: "#8D242C",
-                color: "white",
-                "&:hover": {
-                  backgroundColor: "#C6535C",
-                },
-              }}
+              className="navButton"
               href="#contact" // Link to Contact section
             >
               Contact

@@ -67,22 +67,15 @@ const SushiCarousel = () => (
     <Button
       variant="contained"
       color="primary"
+      className="actionButton"
       sx={{
         position: "absolute",
-        bottom: "50%", // Position the button 20% from the bottom
+        bottom: "50%",
         left: "50%",
         transform: "translateX(-50%)",
-        backgroundColor: "#8D242C",
-        color: "white",
-        fontSize: "1.25rem", // Increase font size
-        padding: "12px 24px", // Increase padding for a larger button
-        borderRadius: "8px", // Rounded corners
-        "&:hover": {
-          backgroundColor: "#C6535C",
-        },
         zIndex: 2,
       }}
-      href="https://external-ordering-menu.com" // Link to your external ordering menu
+      href="https://external-ordering-menu.com"
     >
       Order Online
     </Button>

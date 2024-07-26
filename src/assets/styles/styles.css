@@ -1,0 +1,109 @@
+.navButton {
+  background-color: #8d242c !important;
+  color: white !important;
+  font-family: "Judson", serif !important;
+  font-size: 32px !important;
+  border-radius: 10px !important;
+  margin-left: 15px !important;
+  margin-right: 15px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  text-transform: none !important;
+  transition: background-color 0.3s !important;
+}
+
+.navButton:hover {
+  background-color: #c6535c !important;
+}
+
+.actionButton {
+  background-color: #8d242c !important;
+  color: white !important;
+  font-family: "Judson", serif !important;
+  font-size: 36px !important;
+  border-radius: 10px !important;
+  margin-left: 15px !important;
+  margin-right: 15px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  text-transform: none !important;
+  transition: background-color 0.3s !important;
+}
+
+.actionButton:hover {
+  background-color: #c6535c !important;
+}
+
+.hoursBox {
+  background-color: #8d242c !important;
+  color: white !important;
+  font-family: "Judson", serif !important;
+  font-size: 28px !important;
+  border-radius: 10px !important;
+  margin-left: 15px !important;
+  margin-right: 15px !important;
+  text-transform: none !important;
+  padding: 20px !important; /* Add padding inside the box */
+}
+
+/* Add vertical spacing between elements inside the hoursBox */
+.hoursBox > * {
+  margin-bottom: 10px !important; /* Space between items inside */
+}
+
+/* Optional: Remove margin from the last child to avoid extra space at the bottom */
+.hoursBox > *:last-child {
+  margin-bottom: 0 !important;
+}
+
+.hoursText {
+  font-size: 28px !important;
+}
+
+.aboutText {
+  font-size: 36px !important;
+  margin-bottom: 50px !important;
+}
+
+.contactLabel {
+  font-family: "Judson" !important;
+  font-size: 30px !important;
+  text-align: left !important;
+}
+
+.contactText {
+  font-family: "Judson" !important;
+  font-size: 16px !important;
+}
+
+.formButton {
+  font-family: "Judson", serif !important;
+  font-size: 21px !important;
+  background-color: #8d242c !important;
+  color: white !important;
+  width: fit-content !important; /* Adjust width to fit content */
+  padding: 8px 16px !important; /* Add padding around the button text */
+  margin-top: 2px !important; /* Space above the button */
+  align-self: flex-start !important; /* Align to the left */
+  transition: background-color 0.3s !important; /* Optional: Smooth transition for hover effect */
+}
+
+.formButton:hover {
+  background-color: #c6535c !important;
+}
+
+/* Other styles */
+.sectionHeader {
+  font-family: "Julee" !important;
+  margin-bottom: 0 !important;
+  font-size: 50px !important;
+}
+
+.logo {
+  height: 200px !important;
+  margin-right: 16px !important;
+  padding: 10px !important;
+  padding-top: 60px !important;
+  margin-bottom: -20px !important;
+  z-index: 10 !important;
+}

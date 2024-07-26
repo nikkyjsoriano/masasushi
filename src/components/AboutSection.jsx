@@ -6,7 +6,7 @@ const AboutSection = () => (
   <Box
     id="about"
     sx={{
-      width: "70%",
+      width: "90%",
       maxWidth: "1200px",
       margin: "0 auto",
       padding: 4,
@@ -24,52 +24,28 @@ const AboutSection = () => (
     >
       {/* Reservations Column */}
       <Box sx={{ textAlign: "center", marginRight: 5 }}>
-        <Button
-          variant="contained"
-          sx={{
-            backgroundColor: "#8D242C",
-            color: "white",
-            fontSize: "1.25rem", // Larger text
-            padding: "10px 30px", // Add padding around the text
-            textTransform: "none", // Ensure text is not in all caps
-            "&:hover": {
-              backgroundColor: "#C6535C",
-            },
-          }}
-        >
+        <Button variant="contained" className="actionButton">
           Make a Reservation
         </Button>
       </Box>
       {/* Hours Column */}
-      <Box
-        sx={{
-          textAlign: "left",
-          backgroundColor: "#8D242C",
-          color: "white",
-          padding: 2,
-          borderRadius: 1,
-          width: "auto", // Adjust width to fit the text content
-        }}
-      >
-        <Typography variant="h6" sx={{ textAlign: "left" }}>
+      <Box className="hoursBox">
+        <Typography className="hoursText" sx={{ textAlign: "left" }}>
           Our Hours:
         </Typography>
-        <Typography variant="body1">MON: 11:00AM-9:30PM</Typography>
-        <Typography variant="body1">TUE: 11:00AM-9:30PM</Typography>
-        <Typography variant="body1">WED: 11:00AM-9:30PM</Typography>
-        <Typography variant="body1">THU: 11:00AM-9:30PM</Typography>
-        <Typography variant="body1">FRI: 11:00AM-9:30PM</Typography>
-        <Typography variant="body1">SAT: 11:00AM-9:30PM</Typography>
-        <Typography variant="body1">SUN: 11:00AM-9:30PM</Typography>
+        <Typography className="hoursText">MON: 11:00AM-9:30PM</Typography>
+        <Typography className="hoursText">TUE: 11:00AM-9:30PM</Typography>
+        <Typography className="hoursText">WED: 11:00AM-9:30PM</Typography>
+        <Typography className="hoursText">THU: 11:00AM-9:30PM</Typography>
+        <Typography className="hoursText">FRI: 11:00AM-9:30PM</Typography>
+        <Typography className="hoursText">SAT: 11:00AM-9:30PM</Typography>
+        <Typography className="hoursText">SUN: 11:00AM-9:30PM</Typography>
       </Box>
     </Box>
 
     <Typography
       variant="h4"
-      sx={{
-        fontFamily: '"Julee", cursive',
-        marginBottom: 0,
-      }}
+      className="sectionHeader"
       gutterBottom
       textAlign="center"
     >
@@ -87,40 +63,20 @@ const AboutSection = () => (
         marginBottom: 3,
       }}
     />
-    <Typography
-      variant="body1"
-      sx={{
-        fontSize: "1.25rem",
-        lineHeight: 1.8,
-        marginBottom: 2,
-      }}
-    >
+    <Typography variant="body1" className="aboutText">
       Welcome to [Restaurant Name], your ultimate destination for an exquisite
       all-you-can-eat sushi experience. Nestled in the heart of
       [City/Neighborhood], our restaurant is dedicated to bringing you the
       freshest and most delicious sushi in a warm and inviting atmosphere.
     </Typography>
-    <Typography
-      variant="body1"
-      sx={{
-        fontSize: "1.25rem",
-        lineHeight: 1.8,
-        marginBottom: 2,
-      }}
-    >
+    <Typography variant="body1" className="aboutText">
       At [Restaurant Name], we believe that sushi is more than just food; it's
       an art form. Our talented chefs use only the finest ingredients,
       meticulously sourced to ensure each bite is a perfect harmony of flavors
       and textures. From classic rolls to innovative creations, our extensive
       menu offers something for every palate.
     </Typography>
-    <Typography
-      variant="body1"
-      sx={{
-        fontSize: "1.25rem",
-        lineHeight: 1.8,
-      }}
-    >
+    <Typography variant="body1" className="aboutText">
       Our all-you-can-eat concept allows you to indulge in an unlimited
       selection of your favorite sushi rolls, nigiri, sashimi, and more. Whether
       you're a sushi aficionado or a newcomer to the sushi scene, we promise an

@@ -1,4 +1,3 @@
-Added all components w/o styling
+Added styling to most components
 
-- All the pieces we need for the site are in place but a lot of the styling is not there
-- There will also need to be a complete responsiveness overhaul
+- Added base line style so it looks good on desktop, we still need to account for mobile and tablet

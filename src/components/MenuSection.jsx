@@ -7,7 +7,7 @@ const MenuSection = () => (
   <Box
     id="menu"
     sx={{
-      // width: "70%",
+      // width: "90%",
       // maxWidth: "1200px",
       margin: "0 auto",
       padding: 4,
@@ -15,10 +15,7 @@ const MenuSection = () => (
   >
     <Typography
       variant="h4"
-      sx={{
-        fontFamily: '"Julee", cursive',
-        marginBottom: 0,
-      }}
+      className="sectionHeader"
       gutterBottom
       textAlign="center"
     >
