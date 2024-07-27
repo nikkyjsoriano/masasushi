@@ -2,14 +2,9 @@ import React from "react";
 import Slider from "react-slick";
 import { Button, Box } from "@mui/material";
 
-// Import slick-carousel CSS
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// Import custom CSS for styling dots
-import "../assets/styles/customPaging.css";
-
-// Dynamically import images from './assets/samples'
 const importAll = (r) => {
   let images = {};
   r.keys().map((item) => {
@@ -25,8 +20,8 @@ const images = importAll(
 
 const settings = {
   dots: true,
-  infinite: true,
   speed: 500,
+  infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
   appendDots: (dots) => (
@@ -67,7 +62,7 @@ const SushiCarousel = () => (
     <Button
       variant="contained"
       color="primary"
-      className="actionButton"
+      className="button actionButton"
       sx={{
         position: "absolute",
         bottom: "50%",

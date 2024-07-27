@@ -1,66 +1,53 @@
-import React from "react";
+// import React from "react";
 import "./assets/styles/styles.css";
-
 import { AppBar, Toolbar, Button, Box } from "@mui/material";
-
-import Logo from "./assets/logo.svg";
+import HeaderNav from "./components/HeaderNav";
 import TopCarousel from "./components/TopCarousel";
 import MenuSection from "./components/MenuSection";
 import AboutSection from "./components/AboutSection";
 import ContactSection from "./components/ContactSection";
 
-function App() {
-  return (
-    <Box sx={{ width: "100%", overflow: "auto", scrollBehavior: "smooth" }}>
-      <AppBar
-        position="relative"
-        sx={{ backgroundColor: "transparent", zIndex: 10 }}
-      >
-        <Toolbar
-          sx={{
-            backgroundColor: "white",
-            display: "flex",
-            alignItems: "center",
-            height: 150,
-            position: "relative",
-            zIndex: 10,
-          }}
-        >
-          {/* Space for the logo */}
-          <img src={Logo} alt="Logo" className="logo" />
-          {/* Navigation Buttons */}
-          <Box sx={{ display: "flex", gap: 2, marginLeft: "auto" }}>
-            <Button
-              className="navButton"
-              href="#about" // Link to About section
-            >
-              About
-            </Button>
-            <Button
-              className="navButton"
-              href="#menu" // Link to Menu section
-            >
-              Menu
-            </Button>
-            <Button
-              className="navButton"
-              href="#contact" // Link to Contact section
-            >
-              Contact
-            </Button>
-          </Box>
-        </Toolbar>
-      </AppBar>
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 
-      {/* Top Carousel */}
-      <Box sx={{ position: "relative", zIndex: 1 }}>
+import React, { useState, useEffect } from "react";
+
+function App() {
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        // Change this value based on when you want to show the button
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  return (
+    <Box>
+      <HeaderNav />
+      <Box className="topCarouselBox">
         <TopCarousel />
       </Box>
-
-      {/* Main Content Sections */}
       <AboutSection />
       <MenuSection />
       <ContactSection />
+
+      <button
+        onClick={scrollToTop}
+        className={`backToTopButton ${showButton ? "showButton" : ""}`}
+      >
+        <ArrowUpwardIcon />
+      </button>
     </Box>
   );
 }

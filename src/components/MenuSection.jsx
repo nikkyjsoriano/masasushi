@@ -4,34 +4,15 @@ import { Box, Typography } from "@mui/material";
 import LineVector from "../assets/lines-vector.svg";
 
 const MenuSection = () => (
-  <Box
-    id="menu"
-    sx={{
-      // width: "90%",
-      // maxWidth: "1200px",
-      margin: "0 auto",
-      padding: 4,
-    }}
-  >
-    <Typography
-      variant="h4"
-      className="sectionHeader"
-      gutterBottom
-      textAlign="center"
-    >
+  <Box id="menu" className="menuContainer">
+    <Typography gutterBottom textAlign="center" className="sectionHeader">
       Our Menu
     </Typography>
     <Box
       component="img"
       src={LineVector}
       alt="Line Vector"
-      sx={{
-        width: "150px",
-        height: "auto",
-        margin: "0 auto",
-        display: "block",
-        marginBottom: 3,
-      }}
+      className="linesVector"
     />
     <MenuCarousel />
   </Box>

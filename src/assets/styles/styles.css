@@ -1,37 +1,99 @@
-.navButton {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.appBar {
+  padding: 0 !important;
+}
+
+.backToTopButton {
+  position: fixed;
+  bottom: 20px; /* Distance from the bottom of the viewport */
+  right: 20px; /* Distance from the right of the viewport */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Smooth transition for visibility */
+  background-color: rgba(0, 0, 0, 0.1); /* Low opacity background color */
+  color: white; /* Icon color */
+  border: none; /* Remove default border */
+  border-radius: 50%; /* Make the button circular */
+  width: 50px; /* Adjust the width */
+  height: 50px; /* Adjust the height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px; /* Font size for the icon */
+  cursor: pointer; /* Pointer cursor on hover */
+  z-index: 1000; /* Ensure it’s above other content */
+}
+
+.backToTopButton:hover {
+  background-color: rgba(0, 0, 0, 0.3); /* Darker background on hover */
+}
+
+/* Show button when scrolling */
+.showButton {
+  opacity: 1;
+}
+
+/* Hide the drawer menu button on larger screens */
+@media (min-width: 768px) {
+  .menuButton {
+    display: none;
+  }
+}
+
+.MuiDrawer-paper {
+  background-color: #8d242c;
+  color: white;
+}
+
+.MuiDrawer-paper .MuiListItem-root {
+  padding: 10px;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.topCarouselBox {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.Box {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.button {
   background-color: #8d242c !important;
   color: white !important;
   font-family: "Judson", serif !important;
-  font-size: 32px !important;
   border-radius: 10px !important;
   margin-left: 15px !important;
   margin-right: 15px !important;
-  padding-left: 20px !important;
-  padding-right: 20px !important;
+  padding: 8px 16px !important;
   text-transform: none !important;
   transition: background-color 0.3s !important;
 }
 
-.navButton:hover {
+.button:hover {
   background-color: #c6535c !important;
+}
+
+.navButton {
+  font-size: 32px !important;
 }
 
 .actionButton {
-  background-color: #8d242c !important;
-  color: white !important;
-  font-family: "Judson", serif !important;
   font-size: 36px !important;
-  border-radius: 10px !important;
-  margin-left: 15px !important;
-  margin-right: 15px !important;
-  padding-left: 20px !important;
-  padding-right: 20px !important;
-  text-transform: none !important;
-  transition: background-color 0.3s !important;
-}
-
-.actionButton:hover {
-  background-color: #c6535c !important;
 }
 
 .hoursBox {
@@ -40,20 +102,22 @@
   font-family: "Judson", serif !important;
   font-size: 28px !important;
   border-radius: 10px !important;
+  padding: 20px !important;
   margin-left: 15px !important;
   margin-right: 15px !important;
-  text-transform: none !important;
-  padding: 20px !important; /* Add padding inside the box */
 }
 
-/* Add vertical spacing between elements inside the hoursBox */
 .hoursBox > * {
-  margin-bottom: 10px !important; /* Space between items inside */
+  margin-bottom: 10px !important;
 }
 
-/* Optional: Remove margin from the last child to avoid extra space at the bottom */
 .hoursBox > *:last-child {
   margin-bottom: 0 !important;
+}
+
+.hoursText,
+.contactLabel {
+  font-family: "Judson" !important;
 }
 
 .hoursText {
@@ -66,33 +130,22 @@
 }
 
 .contactLabel {
-  font-family: "Judson" !important;
   font-size: 30px !important;
   text-align: left !important;
 }
 
 .contactText {
-  font-family: "Judson" !important;
   font-size: 16px !important;
 }
 
 .formButton {
   font-family: "Judson", serif !important;
   font-size: 21px !important;
-  background-color: #8d242c !important;
-  color: white !important;
-  width: fit-content !important; /* Adjust width to fit content */
-  padding: 8px 16px !important; /* Add padding around the button text */
-  margin-top: 2px !important; /* Space above the button */
-  align-self: flex-start !important; /* Align to the left */
-  transition: background-color 0.3s !important; /* Optional: Smooth transition for hover effect */
+  width: fit-content !important;
+  margin-top: 2px !important;
+  align-self: flex-start !important;
 }
 
-.formButton:hover {
-  background-color: #c6535c !important;
-}
-
-/* Other styles */
 .sectionHeader {
   font-family: "Julee" !important;
   margin-bottom: 0 !important;
@@ -106,4 +159,172 @@
   padding-top: 60px !important;
   margin-bottom: -20px !important;
   z-index: 10 !important;
+}
+
+.appBar {
+  position: relative !important;
+  background-color: transparent !important;
+  z-index: 10 !important;
+}
+
+.toolBar {
+  background-color: white !important;
+  display: flex !important;
+  align-items: center !important;
+  height: 150px !important;
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+.topCarouselBox {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.slick-dots li button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid #8d242c;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #8d242c;
+}
+
+.textSection {
+  padding: 4px !important;
+  width: 70% !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+
+.linesVector {
+  width: 250px !important;
+  height: auto !important;
+  margin: 0 auto !important;
+  display: block !important;
+  margin-bottom: 3px !important;
+}
+
+.reservationHoursBox {
+  margin: 30px auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.menuContainer {
+  margin: 0 auto !important;
+  padding: 4px !important;
+}
+
+.contactBox {
+  display: flex !important;
+  gap: 4px !important;
+  flex-direction: column !important;
+}
+
+.reservationButton {
+  margin-right: 50px !important;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .navButton,
+  .actionButton,
+  .formButton {
+    font-size: 20px !important;
+  }
+
+  .logo {
+    height: 125px !important;
+    margin-bottom: -20px !important;
+  }
+
+  .toolBar {
+    height: 80px !important;
+  }
+
+  .hoursText {
+    font-size: 16px !important;
+  }
+
+  .sectionHeader {
+    font-size: 35px !important;
+  }
+
+  .aboutText {
+    font-size: 18px !important;
+  }
+
+  .textSection {
+    width: 80% !important;
+  }
+
+  .linesVector {
+    width: 170px !important;
+  }
+
+  .contactLabel {
+    font-size: 20px !important;
+  }
+
+  .contactText {
+    font-size: 10px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .navButton,
+  .actionButton,
+  .formButton {
+    font-size: 12px !important;
+  }
+
+  .logo {
+    padding-top: 20px !important;
+    height: 100px !important;
+    margin-bottom: -20px !important;
+  }
+
+  .toolBar {
+    height: 60px !important;
+  }
+
+  .hoursText {
+    font-size: 12px !important;
+  }
+
+  .sectionHeader {
+    font-size: 25px !important;
+  }
+
+  .aboutText {
+    font-size: 14px !important;
+  }
+
+  .textSection {
+    width: 80% !important;
+  }
+
+  .linesVector {
+    width: 130px !important;
+  }
+
+  .contactLabel {
+    font-size: 14px !important;
+  }
+
+  .contactText {
+    font-size: 10px !important;
+  }
+
+  .textSection {
+    width: 100% !important;
+  }
+
+  .hoursBox {
+    padding: 10px !important;
+  }
 }

@@ -7,7 +7,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 // Import custom CSS for styling dots
-import "../assets/styles/customPaging.css";
 
 // Dynamically import images from './assets/samples'
 const importAll = (r) => {

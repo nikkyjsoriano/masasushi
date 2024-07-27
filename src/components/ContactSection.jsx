@@ -14,16 +14,7 @@ import {
 
 function ContactSection() {
   return (
-    <Box
-      id="contact"
-      sx={{
-        width: "90%",
-        maxWidth: "1200px",
-        margin: "0 auto",
-        padding: 4,
-        textAlign: "center", // Center the title
-      }}
-    >
+    <Box id="contact" className="textSection">
       <Typography className="sectionHeader" gutterBottom textAlign="center">
         Contact Us
       </Typography>
@@ -31,22 +22,16 @@ function ContactSection() {
         component="img"
         src={LineVector}
         alt="Line Vector"
-        sx={{
-          width: "150px",
-          height: "auto",
-          margin: "0 auto",
-          display: "block",
-          marginBottom: 3,
-        }}
+        className="linesVector"
+        sx={{ marginBottom: 3 }}
       />
       <Box
         sx={{
-          display: "flex",
           gap: 4,
+          display: "flex",
           flexDirection: { xs: "column", md: "row" },
         }}
       >
-        {/* Contact Form Column */}
         <Box sx={{ flex: 1 }}>
           <Box
             component="form"
@@ -72,10 +57,9 @@ function ContactSection() {
               <TextField multiline rows={4} fullWidth />
             </Box>
 
-            <Button color="primary" className="formButton">
+            <Button color="primary" className="button formButton">
               Submit
             </Button>
-
             <Box sx={{ display: "flex", gap: 2, marginTop: 2 }}>
               <FormControlLabel
                 control={<Checkbox />}
@@ -88,8 +72,6 @@ function ContactSection() {
             </Box>
           </Box>
         </Box>
-
-        {/* Find Us Column */}
         <Box sx={{ flex: 1 }}>
           <Typography className="contactLabel">Find Us</Typography>
           <img
@@ -102,7 +84,6 @@ function ContactSection() {
               margin: "0 auto",
             }}
           />
-          {/* Address Details Box */}
           <Box
             sx={{
               display: "flex",
@@ -123,11 +104,8 @@ function ContactSection() {
                 415 Nassau Park Blvd, Princeton, NJ 08540, USA
               </Typography>
             </Box>
-
             <Box sx={{ flex: 1, padding: 1, textAlign: "left" }}>
-              <Typography
-                sx={{ fontFamily: '"Judson", serif', marginBottom: 1 }}
-              >
+              <Typography className="contactText">
                 Phone: 609-520-8883
               </Typography>
               <Typography className="contactText">
