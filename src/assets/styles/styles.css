@@ -136,6 +136,8 @@ body {
 
 .contactText {
   font-size: 16px !important;
+  text-align: left;
+  text-wrap: balance;
 }
 
 .formButton {
@@ -271,7 +273,9 @@ body {
   }
 
   .contactText {
-    font-size: 10px !important;
+    font-size: 12px !important;
+    text-align: left;
+    text-wrap: balance;
   }
 }
 
@@ -313,15 +317,13 @@ body {
   }
 
   .contactLabel {
-    font-size: 14px !important;
+    font-size: 16px !important;
   }
 
   .contactText {
-    font-size: 10px !important;
-  }
-
-  .textSection {
-    width: 100% !important;
+    font-size: 12px !important;
+    text-align: left;
+    text-wrap: balance;
   }
 
   .hoursBox {
