@@ -61,19 +61,27 @@ function ContactSection() {
               Submit
             </Button>
             <Box sx={{ display: "flex", gap: 2, marginTop: 2 }}>
-              <FormControlLabel
-                control={<Checkbox />}
+              <FormControlLabel className="checkBox"
+                control={<Checkbox sx={{
+                  "& .MuiSvgIcon-root": {
+                    fill: "white"
+                  },
+                                      }} />}
                 label="I want to receive news and updates"
               />
-              <FormControlLabel
-                control={<Checkbox />}
+              <FormControlLabel className="checkBox"
+                control={<Checkbox sx={{
+                  "& .MuiSvgIcon-root": {
+                    fill: "white"
+                  },
+                                      }} />}
                 label="Apply to Masa Sushi"
               />
             </Box>
           </Box>
         </Box>
         <Box sx={{ flex: 1 }}>
-          <Typography className="contactLabel">Find Us</Typography>
+          <Typography className="findUs">Find Us</Typography>
           <img
             src={FindUs}
             alt="Map"

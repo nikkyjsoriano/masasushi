@@ -232,6 +232,22 @@ body {
   margin-right: 50px !important;
 }
 
+.checkBox {
+  font-family: "Judson", serif !important;
+  color: white;
+  padding: 10px;
+  background-color: #8d242c;
+  border-radius: 12.5px;
+  height: 50px;
+  text-wrap: balance;
+}
+
+.findUs {
+  font-family: "Judson", serif !important;
+  font-size: 30px !important;
+  text-align: center !important;
+}
+
 @media (max-width: 1024px) and (min-width: 768px) {
   .navButton,
   .actionButton,
@@ -269,6 +285,10 @@ body {
   }
 
   .contactLabel {
+    font-size: 20px !important;
+  }
+
+  .findUs {
     font-size: 20px !important;
   }
 
@@ -317,6 +337,10 @@ body {
   }
 
   .contactLabel {
+    font-size: 16px !important;
+  }
+
+  .findUs {
     font-size: 16px !important;
   }
 
