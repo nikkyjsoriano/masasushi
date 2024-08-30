@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import Logo from "../assets/logo.svg";
 import {
-  AppBar,
-  Toolbar,
-  Button,
   Box,
-  IconButton,
-  Drawer,
   List,
+  AppBar,
+  Button,
+  Drawer,
+  Toolbar,
   ListItem,
+  IconButton,
   ListItemText,
 } from "@mui/material";
 
@@ -52,13 +52,13 @@ function HeaderNav() {
           edge="start"
           aria-label="menu"
           sx={{
-            display: { xs: "flex", md: "none" },
-            color: "white", // Match button color
-            backgroundColor: "#8d242c", // Match button background color
-            marginLeft: "auto", // Align to the right
+            color: "white",
+            marginLeft: "auto",
+            backgroundColor: "#8d242c",
             "&:hover": {
-              backgroundColor: "#c6535c", // Match button hover color
+              backgroundColor: "#c6535c",
             },
+            display: { xs: "flex", md: "none" },
           }}
           onClick={toggleDrawer(true)}
         >

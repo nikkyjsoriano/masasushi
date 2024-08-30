@@ -1,12 +1,10 @@
 import React from "react";
 import Slider from "react-slick";
-import { Button, Box } from "@mui/material";
+import { Box } from "@mui/material";
 
 // Import slick-carousel CSS
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-// Import custom CSS for styling dots
 
 // Dynamically import images from './assets/samples'
 const importAll = (r) => {
@@ -24,20 +22,20 @@ const images = importAll(
 
 const settings = {
   dots: true,
-  infinite: true,
   speed: 500,
+  infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
   appendDots: (dots) => (
     <Box
       sx={{
-        position: "absolute",
-        bottom: "5%", // Position dots 10% from the bottom of the carousel
+        zIndex: 1,
+        bottom: "5%",
         width: "100%",
         display: "flex",
-        justifyContent: "center",
+        position: "absolute",
         alignItems: "center",
-        zIndex: 1,
+        justifyContent: "center",
       }}
     >
       {dots}

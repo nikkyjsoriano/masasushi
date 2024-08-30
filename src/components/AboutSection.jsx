@@ -1,6 +1,6 @@
 import React from "react";
+import LinesVector from "./LinesVector.jsx";
 import { Box, Typography, Button } from "@mui/material";
-import LineVector from "../assets/lines-vector.svg";
 
 const AboutSection = () => (
   <Box id="about" className="textSection">
@@ -28,12 +28,7 @@ const AboutSection = () => (
     <Typography gutterBottom textAlign="center" className="sectionHeader">
       About Us
     </Typography>
-    <Box
-      component="img"
-      src={LineVector}
-      alt="Line Vector"
-      className="linesVector"
-    />
+    <LinesVector />
     <Typography className="aboutText">
       Welcome to [Restaurant Name], your ultimate destination for an exquisite
       all-you-can-eat sushi experience. Nestled in the heart of

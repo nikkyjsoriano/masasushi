@@ -1,7 +1,7 @@
 import React from "react";
-import LineVector from "../assets/lines-vector.svg";
-import FindUs from "../assets/findus.png";
 import "../assets/styles/styles.css";
+import FindUs from "../assets/findus.png";
+import LinesVector from "./LinesVector.jsx";
 
 import {
   Box,
@@ -18,13 +18,7 @@ function ContactSection() {
       <Typography className="sectionHeader" gutterBottom textAlign="center">
         Contact Us
       </Typography>
-      <Box
-        component="img"
-        src={LineVector}
-        alt="Line Vector"
-        className="linesVector"
-        sx={{ marginBottom: 3 }}
-      />
+      <LinesVector />
       <Box
         sx={{
           gap: 4,

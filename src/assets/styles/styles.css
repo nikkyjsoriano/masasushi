@@ -207,7 +207,7 @@ body {
   height: auto !important;
   margin: 0 auto !important;
   display: block !important;
-  margin-bottom: 3px !important;
+  margin-bottom: 20px !important;
 }
 
 .reservationHoursBox {
@@ -300,10 +300,25 @@ body {
 }
 
 @media (max-width: 767px) {
+  .topCarouselBox {
+    height: calc(100vw * 4 / 5); /* 4:5 aspect ratio based on width */
+    position: relative; /* Ensure the image is positioned relative to the box */
+  }
+
+  .topCarouselBox img {
+    position: absolute; /* Absolute positioning to ensure covering the box */
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the box without squishing */
+    transform: translate(-50%, -50%); /* Centers the image */
+  }
+
   .navButton,
   .actionButton,
   .formButton {
-    font-size: 12px !important;
+    font-size: 18px !important;
   }
 
   .logo {
