@@ -105,6 +105,7 @@ body {
   padding: 20px !important;
   margin-left: 15px !important;
   margin-right: 15px !important;
+  min-width: 325px;
 }
 
 .hoursBox > * {
@@ -215,6 +216,8 @@ body {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+  background-image: url("drawn_sushi.png");
+  background-size: 100%;
 }
 
 .menuContainer {
@@ -230,6 +233,8 @@ body {
 
 .reservationButton {
   margin-right: 50px !important;
+  min-width: 150px;
+  max-width: 325px;
 }
 
 .checkBox {
@@ -245,7 +250,11 @@ body {
 .findUs {
   font-family: "Judson", serif !important;
   font-size: 30px !important;
-  text-align: center !important;
+  color: white;
+  text-align: left !important;
+  background-color: #8d242c;
+  padding-top: 8px;
+  padding-left: 8px; 
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {
@@ -256,16 +265,21 @@ body {
   }
 
   .logo {
-    height: 125px !important;
+    height: 200px !important;
     margin-bottom: -20px !important;
+    
   }
 
   .toolBar {
-    height: 80px !important;
+    height: 125px !important;
   }
 
   .hoursText {
     font-size: 16px !important;
+  }
+  
+  .hoursBox {
+    max-width: 250px;
   }
 
   .sectionHeader {
@@ -308,7 +322,7 @@ body {
 
   .logo {
     padding-top: 20px !important;
-    height: 100px !important;
+    height: 110px !important;
     margin-bottom: -20px !important;
   }
 
@@ -352,5 +366,6 @@ body {
 
   .hoursBox {
     padding: 10px !important;
+    min-width: 150px;
   }
 }

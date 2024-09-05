@@ -15,16 +15,9 @@ import {
 function ContactSection() {
   return (
     <Box id="contact" className="textSection">
-      <Typography className="sectionHeader" gutterBottom textAlign="center">
+      <Typography className="sectionHeader" gutterBottom textAlign="left">
         Contact Us
       </Typography>
-      <Box
-        component="img"
-        src={LineVector}
-        alt="Line Vector"
-        className="linesVector"
-        sx={{ marginBottom: 3 }}
-      />
       <Box
         sx={{
           gap: 4,

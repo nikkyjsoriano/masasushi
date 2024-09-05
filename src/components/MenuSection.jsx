@@ -8,12 +8,6 @@ const MenuSection = () => (
     <Typography gutterBottom textAlign="center" className="sectionHeader">
       Our Menu
     </Typography>
-    <Box
-      component="img"
-      src={LineVector}
-      alt="Line Vector"
-      className="linesVector"
-    />
     <MenuCarousel />
   </Box>
 );
